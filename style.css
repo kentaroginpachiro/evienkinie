@@ -1,0 +1,265 @@
+body {
+    touch-action: pan-y pinch-zoom;
+    background: #3498db; /* Ganti dengan warna yang diinginkan */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+}
+
+html, body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-touch-callout: none;
+    touch-action: manipulation;
+}
+
+input, textarea {
+    user-select: text;
+    -webkit-user-select: text;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    animation: fadeInScaleUp 0.8s ease-in-out forwards;
+}
+.awan {
+    position: absolute;
+    top: -10%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 75%;
+    max-width: 700px;
+    padding: 0 20px;
+    animation: moveCloudsInfinite 10s ease-in-out infinite alternate;
+}
+
+.awan-img {
+width: 75%;
+height: auto;
+max-width: 900px;
+    opacity: 0.8; /* Efek transparan agar lebih natural */
+}
+
+@keyframes moveCloudsInfinite {
+    0% {
+        transform: translateX(-20%);
+    }
+    50% {
+        transform: translateX(20%);
+    }
+    100% {
+        transform: translateX(-20%);
+    }
+}
+
+
+
+.content {
+    position: relative;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.content-card {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content-card .content-card-img {
+    width: 100%;
+    height: auto;
+    transform: translateX(-5vw);
+}
+.social-btn {
+    position: relative;
+    margin: 10px auto; /* Pusatkan elemen */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 400px; /* Ukuran lebih kecil */
+    max-width: 500px;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-15vw); /* Mengikuti content-card */
+}
+
+.social-btn img {
+    width: 100%; /* Sesuaikan ukuran dengan container */
+    height: auto;
+}
+
+.social-btn:hover {
+    transform: scale(1.2);
+}
+
+
+
+.content3, .content4, .content5 {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.content3 img, .content4 img, .content5 img {
+    width: 100%;
+    height: auto;
+}
+
+.chart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    min-height: 50px;
+    opacity: 1 !important;
+}
+
+.chart-btn img {
+    width: 20vw;
+    max-width: 900px;
+    height: auto;
+}
+
+.chart-btn:hover {
+    transform: scale(1.1);
+}
+
+.wallet-addres {
+    color: white;
+    font-size: clamp(14px, 2vw, 15px);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.wallet-addres h1 {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 5px 0;
+}
+
+.wallet-addres p {
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #4c4c7b;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 5px 0;
+}
+
+.wallet-addres button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #ff00ff, #8a2be2);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.wallet-addres button:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeInScaleUp {
+    0% { opacity: 0.5; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@media screen and (max-width: 768px) {
+    .content-card .content-card-img {
+        width: 70%;
+        transform: translateX(+5vw);
+       
+    }
+    .awan{
+        width: 35%;
+         left: -100%;
+        max-width: 80%;
+    }
+    .social-btn {
+        width: 40%;
+        max-width: 100%;
+        bottom: 5%;
+        left: 6%;
+        transform: translateX(-14vw);
+    }
+    .chart-btn{
+        width: 100%;
+        max-width: 100%;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+    .social-btn:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-card .content-card-img {
+        width: 60%;
+       
+    }
+    .awan{
+        width: 35%;
+         left: -100%;
+        max-width: 80%;
+    }
+    .social-btn {
+        width: 30%;
+        max-width: 100%;
+        bottom: 5%;
+        left: 6%;
+        transform: translateX(-2vw);
+    }
+    
+   
+    
+}
