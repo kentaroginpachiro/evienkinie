@@ -142,21 +142,15 @@
         justify-content: center;
         align-items: center;
         margin-top: 5vh;
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out;
-        min-height: 50px;
-        opacity: 1 !important;
+
     }
 
     .chart-btn img {
-        width: 20vw;
+        width: 50vw;
         max-width: 900px;
         height: auto;
     }
 
-    .chart-btn:hover {
-        transform: scale(1.1);
-    }
 
     .wallet-addres {
         color: black;
@@ -232,14 +226,12 @@
             transform: translateX(-14vw);
         }
         .chart-btn{
-            width: 100%;
-            max-width: 100%;
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
+            width: 300%;
+            max-width: 300%;
+    
+
         }
-        .social-btn:hover {
-            transform: scale(1.2);
-        }
+    
     }
 
     @media screen and (max-width: 480px) {
