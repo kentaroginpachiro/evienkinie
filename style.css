@@ -208,12 +208,11 @@
     }
 
     @media screen and (max-width: 768px) {
-        .content-card-img {
-            width: 100%;
-            right : 20%;
-            transform: translateX(+5vw);
-        
-        }
+       .content-card .content-card-img {
+        width: 100%;
+        height: auto;
+        transform: translateX(-5vw);
+    }
         .awan{
             width: 15%;
             left: -100%;
