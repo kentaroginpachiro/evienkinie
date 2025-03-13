@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Tombol sosial media (X/Twitter)
     document.querySelector(".social-btn").addEventListener("click", function () {
-        window.open("https://x.com/evieandkinie", "_blank");  // Ganti dengan link yang benar
+        window.open("https://x.com/eviekiniee?s=21", "_blank");  // Ganti dengan link yang benar
     });
 
     // Tombol chart (Dexscreener)
