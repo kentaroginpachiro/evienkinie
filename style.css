@@ -209,7 +209,8 @@
 
     @media screen and (max-width: 768px) {
         .content-card-img {
-            width: 120%;
+            width: 100%;
+            right : 20%;
             transform: translateX(+5vw);
         
         }
